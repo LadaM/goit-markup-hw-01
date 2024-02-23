@@ -1,0 +1,43 @@
+:root {
+	--fuschia-100: #ef5da8;
+	--fuschia-80: #f178b6;
+	--fuschia-60: #fcddec;
+	--iris-100: #5d5fef;
+	--iris-80: #7879f1;
+	--iris-60: #a5a6f6;
+    --accent: #4D5AE5;
+    --text: #434445;
+    --font-family: "Inter", sans-serif;
+    --second-family: "Droid Sans", sans-serif;
+    --third-family: "Work Sans", sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text);
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo-link, .logo-link:hover, .logo-link:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 3%;
+}
+
+.logo-text.accent {
+    color: var(--accent);
+}
