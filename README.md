@@ -1,2 +1,2 @@
-# goit-markup-hw-01
-Homework #1 in the course HTML and CSS Fundamentals for User Interface Design 2.0
+# goit-markup-hw-02
+Homework #2 in the course HTML and CSS Fundamentals for User Interface Design 2.0
