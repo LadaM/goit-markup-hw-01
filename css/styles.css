@@ -1,7 +1,4 @@
 :root {
-  --fuschia-100: #ef5da8;
-  --fuschia-80: #f178b6;
-  --fuschia-60: #fcddec;
   --iris-100: #5d5fef;
   --iris-80: #7879f1;
   --iris-60: #a5a6f6;
@@ -12,9 +9,6 @@
   --cloud: #f4f4fd;
   --text: #2e2f42;
   --navy-blue: #2e2f42;
-  --font-family: "Inter", sans-serif;
-  --second-family: "Droid Sans", sans-serif;
-  --third-family: "Work Sans", sans-serif;
   --page-padding: 156px;
   --header-height: 72px;
   --line-height: 24px;
@@ -237,7 +231,7 @@ address li {
 }
 
 .team h3 {
-    padding-top: 32px;
+  padding-top: 32px;
 }
 
 .team li {
