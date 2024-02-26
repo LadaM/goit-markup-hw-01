@@ -18,6 +18,7 @@
   --page-padding: 156px;
   --header-height: 72px;
   --line-height: 24px;
+  --card-width: 264px;
 }
 
 body {
@@ -41,11 +42,14 @@ ul {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   display: flex;
-  align-items: center;
 }
 
 li {
   list-style-type: none;
+}
+
+li + li {
+  margin-left: var(--line-height);
 }
 
 button {
@@ -63,6 +67,13 @@ button {
 
 button:hover {
   background-color: var(--ocean);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: var(--header-height);
+  margin-bottom: 36px;
 }
 
 h1 {
@@ -84,6 +95,7 @@ h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+  margin: 0;
 }
 
 a:link,
@@ -204,7 +216,36 @@ address li {
 
 .hero h1 {
   margin: 0 auto;
-  padding-top: 30%;
+  padding-top: 3em;
   padding-bottom: var(--line-height);
   max-width: 496px;
+}
+
+.perks li {
+  width: var(--card-width);
+  padding-top: var(--header-height);
+}
+
+.business img {
+  width: 360px;
+  height: 300px;
+}
+
+.team img {
+  width: 264px;
+  height: 260px;
+}
+
+.team h3 {
+    padding-top: 32px;
+}
+
+.team li {
+  text-align: center;
+  padding: 0px 0px 32px 0px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
+  margin-bottom: var(--header-height);
 }
