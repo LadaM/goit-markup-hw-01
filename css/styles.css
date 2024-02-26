@@ -17,6 +17,7 @@
   --third-family: "Work Sans", sans-serif;
   --page-padding: 156px;
   --header-height: 72px;
+  --line-height: 24px;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
   color: var(--text);
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: var(--line-height);
   letter-spacing: 0.02em;
   text-align: left;
   margin: 0;
@@ -39,6 +40,8 @@ ul {
   list-style: none;
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  display: flex;
+  align-items: center;
 }
 
 li {
@@ -121,7 +124,7 @@ footer {
 }
 
 footer p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .logo-link {
@@ -190,4 +193,18 @@ address ul {
 
 address li {
   margin-left: 0.5em;
+}
+
+.hero {
+  background-color: var(--navy-blue);
+  color: white;
+  height: 600px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 auto;
+  padding-top: 30%;
+  padding-bottom: var(--line-height);
+  max-width: 496px;
 }
