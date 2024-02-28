@@ -36,14 +36,12 @@ ul {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   display: flex;
+  justify-content: space-between;
+
 }
 
 li {
   list-style-type: none;
-}
-
-li + li {
-  margin-left: var(--line-height);
 }
 
 button {
@@ -59,7 +57,6 @@ button {
   box-shadow: 0px 4px 4px 0px #00000026;
   text-align: center;
 }
-
 
 button:hover {
   background-color: var(--ocean);
@@ -90,7 +87,6 @@ h3 {
   /* styleName: Header 3; */
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px;
   margin: 0;
 }
 
@@ -227,6 +223,8 @@ address li {
   height: 300px;
 }
 
+.team {
+}
 .team img {
   width: 264px;
   height: 260px;
@@ -246,19 +244,51 @@ address li {
   margin-bottom: var(--header-height);
 }
 
-.portfolio-filter {
-    margin: 96px 72px;
+.portfolio-filter-container {
+  margin: 96px 72px;
+  width: 586px;
+  justify-content: space-between;
 }
 
-.portfolio-filter button, .portfolio-filter button:hover {
-    background-color: var(--cloud);
-    color: var(--accent);
-    border: 1px solid var(--cornflower);
-    border-radius: 4px;
-    padding: 12px 24px 12px 24px;
+.portfolio-filter-container button,
+.portfolio-filter-container button:hover {
+  background-color: var(--cloud);
+  color: var(--accent);
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  padding: 12px 24px 12px 24px;
 }
 
-.selected-portfolio-filter button, .selected-portfolio-filter button:active {
-    background-color: var(--accent);
-    color: white;
+.selected-portfolio-filter button,
+.selected-portfolio-filter button:active {
+  background-color: var(--accent);
+  color: white;
+}
+
+.portfolio-cards-container {
+  text-wrap: wrap;
+  margin-bottom: 96px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-card {
+  border: 1px solid var(--cornflower);
+  padding-bottom: var(--line-height);
+  margin-bottom: var(--line-height);
+}
+
+.portfolio-card h3 {
+    margin-top: var(--line-height);
+    padding-right: 5px;
+    padding-left: 12px;
+}
+
+.portfolio-card p {
+    padding-left: 12px;
+}
+
+.portfolio-card img {
+  width: 360px;
+  height: 300px;
 }
