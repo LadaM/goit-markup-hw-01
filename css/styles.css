@@ -1,14 +1,12 @@
 :root {
-  --iris-100: #5d5fef;
-  --iris-80: #7879f1;
-  --iris-60: #a5a6f6;
-  --cornflower: #e7e9fc;
-  --accent: #4d5ae5;
-  --ocean: #404bbf;
-  --slate: #434445;
-  --cloud: #f4f4fd;
+  --iris: #4d5ae5; /* primary brand color  */
+  --ocean: #404bbf; /* pressed state */
+  --navy-blue: #2e2f42; /* Dark - overlays, headings, shadows */
+  --slate: #434445; /* Text */
+  --light-slate: #434455; /* Subtle text */
   --text: #2e2f42;
-  --navy-blue: #2e2f42;
+  --cornflower: #e7e9fc; /* Accent */
+  --cloud: #f4f4fd; /* Light */
   --page-padding: 156px;
   --header-height: 72px;
   --line-height: 24px;
@@ -32,12 +30,11 @@ main {
 }
 
 ul {
-  list-style: none;
+  list-style: none; /* Remove bullets */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   display: flex;
   justify-content: space-between;
-
 }
 
 li {
@@ -52,7 +49,7 @@ button {
   letter-spacing: 0.04em;
   padding: 16px 32px 16px 32px;
   border-radius: 4px;
-  background-color: var(--accent);
+  background-color: var(--iris);
   color: white;
   box-shadow: 0px 4px 4px 0px #00000026;
   text-align: center;
@@ -96,7 +93,7 @@ a:visited {
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.04em;
-  color: var(--accent);
+  color: var(--iris);
 }
 
 a:hover {
@@ -143,7 +140,7 @@ footer p {
 }
 
 .web {
-  color: var(--accent);
+  color: var(--iris);
 }
 
 .studio-dark {
@@ -253,7 +250,7 @@ address li {
 .portfolio-filter-container button,
 .portfolio-filter-container button:hover {
   background-color: var(--cloud);
-  color: var(--accent);
+  color: var(--iris);
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   padding: 12px 24px 12px 24px;
@@ -261,7 +258,7 @@ address li {
 
 .selected-portfolio-filter button,
 .selected-portfolio-filter button:active {
-  background-color: var(--accent);
+  background-color: var(--iris);
   color: white;
 }
 
@@ -279,13 +276,13 @@ address li {
 }
 
 .portfolio-card h3 {
-    margin-top: var(--line-height);
-    padding-right: 5px;
-    padding-left: 12px;
+  margin-top: var(--line-height);
+  padding-right: 5px;
+  padding-left: 12px;
 }
 
 .portfolio-card p {
-    padding-left: 12px;
+  padding-left: 12px;
 }
 
 .portfolio-card img {
