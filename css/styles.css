@@ -57,7 +57,9 @@ button {
   background-color: var(--accent);
   color: white;
   box-shadow: 0px 4px 4px 0px #00000026;
+  text-align: center;
 }
+
 
 button:hover {
   background-color: var(--ocean);
@@ -242,4 +244,21 @@ address li {
   box-shadow: 0px 1px 1px 0px #2e2f4229;
   box-shadow: 0px 1px 6px 0px #2e2f4214;
   margin-bottom: var(--header-height);
+}
+
+.portfolio-filter {
+    margin: 96px 72px;
+}
+
+.portfolio-filter button, .portfolio-filter button:hover {
+    background-color: var(--cloud);
+    color: var(--accent);
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px 12px 24px;
+}
+
+.selected-portfolio-filter button, .selected-portfolio-filter button:active {
+    background-color: var(--accent);
+    color: white;
 }
