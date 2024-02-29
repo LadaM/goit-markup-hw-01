@@ -7,26 +7,20 @@
   --text: #2e2f42;
   --cornflower: #e7e9fc; /* Accent */
   --cloud: #f4f4fd; /* Light */
-  --page-padding: 156px;
   --header-height: 72px;
   --line-height: 24px;
   --card-width: 264px;
+  --logo-font-size: 18px;
 }
 
 body {
   font-family: Roboto, sans-serif;
   color: var(--text);
   font-size: 16px;
-  font-weight: 400;
   line-height: var(--line-height);
   letter-spacing: 0.02em;
   text-align: left;
   margin: 0;
-}
-
-main {
-  padding-left: var(--page-padding);
-  padding-right: var(--page-padding);
 }
 
 ul {
@@ -69,14 +63,12 @@ h2 {
 h1 {
   /* styleName: Header 1; */
   font-size: 56px;
-  font-weight: 700;
   line-height: 60px;
 }
 
 h2 {
   /* styleName: Header 2; */
   font-size: 36px;
-  font-weight: 700;
   line-height: 40px;
 }
 
@@ -93,11 +85,11 @@ a:visited {
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.04em;
-  color: var(--iris);
+  color: var(--slate);
 }
 
 a:hover {
-  color: var(--slate);
+  color: var(--iris);
 }
 
 a:active {
@@ -127,7 +119,6 @@ footer p {
 
 .logo-link {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.03em;
@@ -137,14 +128,17 @@ footer p {
 }
 
 .web {
+  font-size: var(--logo-font-size);
   color: var(--iris);
 }
 
 .studio-dark {
+  font-size: var(--logo-font-size);
   color: var(--text);
 }
 
 .studio-light {
+  font-size: var(--logo-font-size);
   color: var(--cloud);
 }
 
@@ -217,8 +211,6 @@ address li {
   height: 300px;
 }
 
-.team {
-}
 .team img {
   width: 264px;
   height: 260px;
