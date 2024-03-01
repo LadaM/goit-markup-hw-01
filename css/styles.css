@@ -34,25 +34,6 @@ li {
   list-style-type: none;
 }
 
-button {
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: inherit;
-  line-height: inherit;
-  letter-spacing: 0.04em;
-  padding: 16px 32px 16px 32px;
-  border-radius: 4px;
-  background-color: var(--iris);
-  color: white;
-  box-shadow: 0px 4px 4px 0px #00000026;
-  text-align: center;
-}
-
-button:hover {
-  background-color: var(--ocean);
-}
-
 h1,
 h2 {
   text-align: center;
@@ -63,13 +44,13 @@ h2 {
 h1 {
   /* styleName: Header 1; */
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07143em; /* isn't precise or readable */
 }
 
 h2 {
   /* styleName: Header 2; */
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.112em; /* isn't precise or readable */
 }
 
 h3 {
@@ -110,10 +91,6 @@ footer {
   height: calc(2 * var(--page-padding));
 }
 
-footer p {
-  margin-bottom: 0;
-}
-
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -141,7 +118,6 @@ footer p {
 
 .main-nav {
   display: flex;
-  align-items: center;
 }
 
 .main-nav a {
@@ -159,11 +135,6 @@ footer p {
   text-decoration: solid 2px var(--ocean);
 }
 
-.main-nav ul {
-  display: flex;
-  align-items: center;
-}
-
 .main-nav li {
   margin-left: 40px;
 }
@@ -171,13 +142,6 @@ footer p {
 address {
   display: flex;
   align-items: center;
-}
-
-address ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
 }
 
 address li {
@@ -197,6 +161,25 @@ address li {
   padding-bottom: var(--line-height);
   max-width: 496px;
 }
+
+.primary-button {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: 0.04em;
+    padding: 16px 32px 16px 32px;
+    border-radius: 4px;
+    background-color: var(--iris);
+    color: white;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    text-align: center;
+  }
+  
+  .primary-button:hover, .primary-button:focus {
+    background-color: var(--ocean);
+  }
 
 .perks li {
   width: var(--card-width);
@@ -233,13 +216,17 @@ address li {
   justify-content: space-between;
 }
 
-.portfolio-filter-container button,
-.portfolio-filter-container button:hover {
+.portfolio-filter-container button {
   background-color: var(--cloud);
   color: var(--iris);
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   padding: 12px 24px 12px 24px;
+}
+
+.portfolio-filter-container button:hover, .portfolio-filter-container button:focus {
+    background-color: var(--ocean);
+    color: white;
 }
 
 .selected-portfolio-filter button,
