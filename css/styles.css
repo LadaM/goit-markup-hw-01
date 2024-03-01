@@ -216,7 +216,7 @@ address li {
   justify-content: space-between;
 }
 
-.portfolio-filter-container button {
+.portfolio-filter-button {
   background-color: var(--cloud);
   color: var(--iris);
   border: 1px solid var(--cornflower);
@@ -224,7 +224,7 @@ address li {
   padding: 12px 24px 12px 24px;
 }
 
-.portfolio-filter-container button:hover, .portfolio-filter-container button:focus {
+.portfolio-filter-button:hover, .portfolio-filter-button:focus {
     background-color: var(--ocean);
     color: white;
 }
