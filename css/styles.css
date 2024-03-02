@@ -44,13 +44,13 @@ h2 {
 h1 {
   /* styleName: Header 1; */
   font-size: 56px;
-  line-height: 1.07143em; /* isn't precise or readable */
+  line-height: 60px;
 }
 
 h2 {
   /* styleName: Header 2; */
   font-size: 36px;
-  line-height: 1.112em; /* isn't precise or readable */
+  line-height: 40px;
 }
 
 h3 {
@@ -63,14 +63,15 @@ h3 {
 a:link,
 a:visited {
   font-size: 16px;
-  font-style:normal;
+  font-style: normal;
   line-height: inherit;
   letter-spacing: 0.04em;
   color: var(--slate);
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--iris);
 }
 
@@ -163,23 +164,24 @@ address li {
 }
 
 .primary-button {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: inherit;
-    line-height: inherit;
-    letter-spacing: 0.04em;
-    padding: 16px 32px 16px 32px;
-    border-radius: 4px;
-    background-color: var(--iris);
-    color: white;
-    box-shadow: 0px 4px 4px 0px #00000026;
-    text-align: center;
-  }
-  
-  .primary-button:hover, .primary-button:focus {
-    background-color: var(--ocean);
-  }
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: 0.04em;
+  padding: 16px 32px 16px 32px;
+  border-radius: 4px;
+  background-color: var(--iris);
+  color: white;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  text-align: center;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background-color: var(--ocean);
+}
 
 .perks li {
   width: var(--card-width);
@@ -222,15 +224,22 @@ address li {
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   padding: 12px 24px 12px 24px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: var(--line-height);
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
-.portfolio-filter-button:hover, .portfolio-filter-button:focus {
-    background-color: var(--ocean);
-    color: white;
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
+  background-color: var(--ocean);
+  color: white;
 }
 
-.selected-portfolio-filter button,
-.selected-portfolio-filter button:active {
+.selected-portfolio-filter,
+.selected-portfolio-filter:active {
   background-color: var(--iris);
   color: white;
 }
