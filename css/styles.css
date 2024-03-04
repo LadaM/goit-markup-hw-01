@@ -12,6 +12,12 @@
   --logo-font-size: 18px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -26,8 +32,6 @@ ul {
   list-style: none; /* Remove bullets */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  display: flex;
-  justify-content: space-between;
 }
 
 li {
@@ -36,9 +40,8 @@ li {
 
 h1,
 h2 {
-  text-align: center;
-  margin-top: var(--header-height);
-  margin-bottom: 36px;
+  /* text-align: center; */
+  margin: 0;
 }
 
 h1 {
@@ -60,6 +63,10 @@ h3 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 a:link,
 a:visited {
   font-size: 16px;
@@ -77,19 +84,12 @@ a:focus {
 
 header {
   border-bottom: 1px solid var(--cornflower);
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between; /* Space elements evenly across the header */
-  align-items: center;
-  padding-left: var(--page-padding);
-  padding-right: var(--page-padding);
 }
 
 footer {
-  padding: var(--header-height) var(--page-padding);
   background-color: var(--navy-blue);
   color: var(--cloud);
-  height: calc(2 * var(--page-padding));
+  height: 360px;
 }
 
 .logo-link {
@@ -119,6 +119,8 @@ footer {
 
 .main-nav {
   display: flex;
+  align-items: center;
+  gap: 76px; /* Space between logo and header items */
 }
 
 .main-nav a {
@@ -136,17 +138,37 @@ footer {
   text-decoration: solid 2px var(--ocean);
 }
 
-.main-nav li {
-  margin-left: 40px;
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Space elements evenly across the header */
+  align-items: center;
+  height: var(--header-height);
+  max-width: 1128px;
+  margin: 0 auto;
 }
 
-address {
+.header-item-container {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
-address li {
-  margin-left: 0.5em;
+.section-container {
+  max-width: 1136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px; /* Space between header and list content */
+  margin: 120px auto 0;
+}
+
+.card-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .hero {
@@ -185,7 +207,6 @@ address li {
 
 .perks li {
   width: var(--card-width);
-  padding-top: var(--header-height);
 }
 
 .business img {
@@ -213,9 +234,9 @@ address li {
 }
 
 .portfolio-filter-container {
-  margin: 96px 72px;
-  width: 586px;
-  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
 }
 
 .portfolio-filter-button {
@@ -254,7 +275,6 @@ address li {
 .portfolio-card {
   border: 1px solid var(--cornflower);
   padding-bottom: var(--line-height);
-  margin-bottom: var(--line-height);
 }
 
 .portfolio-card h3 {
