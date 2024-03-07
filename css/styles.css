@@ -285,19 +285,15 @@ footer {
   justify-content: space-between;
 }
 
-.portfolio-card {
-  border: 1px solid var(--cornflower);
-  padding-bottom: var(--line-height);
-}
-
-.portfolio-card h3 {
-  margin-top: var(--line-height);
-  padding-right: 5px;
-  padding-left: 12px;
-}
-
-.portfolio-card p {
-  padding-left: 12px;
+.portfolio-card-text-container {
+  border-right: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
+  padding: 32px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: -6px; /* a hack to avoid a gap between the image and the text */
 }
 
 .portfolio-card img {
