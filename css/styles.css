@@ -93,8 +93,9 @@ footer {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
   width: 100%;
   display: block;
 }
@@ -148,10 +149,11 @@ footer {
   color: var(--slate);
   font-size: 16px;
   font-weight: 500;
-  line-height: inherit;
+  line-height: var(--line-height);
   letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
+  padding: 24px 0;
 }
 
 .main-nav a:hover {
@@ -163,7 +165,6 @@ footer {
   display: flex;
   justify-content: space-between; /* Space elements evenly across the header */
   align-items: center;
-  height: var(--header-height);
   margin: 0 auto;
 }
 
@@ -192,19 +193,19 @@ footer {
 
 .hero {
   background-color: var(--navy-blue);
-  color: white;
-  height: 600px;
   text-align: center;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 
 .hero h1 {
-  margin: 0 auto;
-  padding-top: 3em;
-  padding-bottom: var(--line-height);
+  color: white;
+  margin: 0 auto 48px auto;
   max-width: 496px;
 }
 
 .primary-button {
+  border:none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -245,10 +246,10 @@ footer {
 }
 
 .team-card {
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 1px 0px #2e2f4214;
   box-shadow: 0px 1px 1px 0px #2e2f4229;
-  box-shadow: 0px 1px 6px 0px #2e2f4214; 
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
   background-color: white;
 }
 
