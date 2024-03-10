@@ -262,6 +262,11 @@ footer {
   flex-direction: column;
 }
 
+.portfolio-section-container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .portfolio-filter-container {
   margin: 0 auto var(--header-height) auto;
   display: flex;
