@@ -72,6 +72,11 @@ img {
   max-width: 100%;
 }
 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
 a:link,
 a:visited {
   font-size: 16px;
@@ -225,15 +230,27 @@ header {
   background-color: var(--ocean);
 }
 
-.perks {
+.benefits {
   padding-top: 120px;
 }
 
-.perks li {
+.benefits-icon-wrapper {
+  padding: 24px 100px;
+  background-color: var(--cloud);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.benefits-icon {
+  width: 64px;
+  height: 64px; 
+}
+
+.benefits li {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.perks h3 {
+.benefits h3 {
   margin-bottom: 8px;
 }
 
