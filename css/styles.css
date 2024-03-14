@@ -258,6 +258,7 @@ header {
   display: flex;
   gap: 8px;
   flex-direction: column;
+  align-items: center;
 }
 
 .client-icon {
@@ -355,10 +356,13 @@ header {
   max-width: 264px;
 }
 
+.footer-social-media h3 {
+  margin-bottom: 16px;
+}
+
 .social-media-icons-container {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .social-media-icon {
@@ -376,8 +380,8 @@ header {
   background-color: var(--ocean);
 }
 
-.social-media-icon.footer:hover,
-.social-media-icon.footer:focus {
+.footer-social-media .social-media-icon:hover,
+.footer-social-media .social-media-icon:focus {
   background-color: var(--green);
 }
 
