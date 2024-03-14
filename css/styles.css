@@ -199,6 +199,11 @@ header {
 
 .hero {
   background-color: var(--navy-blue);
+  background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+    url(../images/hero-bg.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   text-align: center;
   padding-bottom: 188px;
   padding-top: 188px;
@@ -244,7 +249,7 @@ header {
 
 .benefits-icon {
   width: 64px;
-  height: 64px; 
+  height: 64px;
 }
 
 .benefits li {
