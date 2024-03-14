@@ -1,17 +1,17 @@
 :root {
-  --iris: #4d5ae5; /* primary brand color  */
-  --ocean: #404bbf; /* pressed state */
-  --navy-blue: #2e2f42; /* Dark - overlays, headings, shadows */
-  --slate: #434445; /* Text */
-  --light-slate: #434455; /* Subtle text */
-  --cornflower: #e7e9fc; /* Accent */
-  --cloud: #f4f4fd; /* Light */
-  --header-height: 72px;
-  --line-height: 24px;
-  --card-width: 264px;
-  --logo-font-size: 18px;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
 }
-
 *,
 *::before,
 *::after {
@@ -88,9 +88,6 @@ a:focus {
 
 header {
   border-bottom: 1px solid var(--cornflower);
-}
-
-footer {
 }
 
 .container {
@@ -260,6 +257,22 @@ footer {
   display: flex;
   gap: 8px;
   flex-direction: column;
+}
+
+.client-icon {
+  fill: var(--light-slate);
+  border: 1px solid var(--light-slate);
+  padding: 16px 32px;
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  cursor: pointer;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--ocean);
+  border-color: var(--ocean);
 }
 
 .portfolio-section-container {
