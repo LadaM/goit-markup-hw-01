@@ -13,6 +13,7 @@
   --dairy: #fcfcfc;
   --line-height: 24px;
   --header-height: 72px;
+  --logo-font-size: 18px;
 }
 *,
 *::before,
@@ -412,7 +413,6 @@ header {
 }
 
 .portfolio-cards-container {
-  text-wrap: wrap;
   margin-bottom: 96px;
   flex-wrap: wrap;
   justify-content: space-between;
