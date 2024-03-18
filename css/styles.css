@@ -248,13 +248,17 @@ header {
   font-family: inherit;
   line-height: inherit;
   letter-spacing: 0.04em;
-  padding: 16px 32px 16px 32px;
+  padding: 8px 24px;
   border-radius: 4px;
   background-color: var(--iris);
   color: white;
   box-shadow: 0 4px 4px 0 #00000026;
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .primary-button {
+  padding: 16px 32px 16px 32px;
 }
 
 .primary-button:hover,
@@ -264,6 +268,60 @@ header {
 
 .is-hidden {
   display: none;
+}
+
+/* FORM STYLES */
+
+.input {
+  display: block;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: none;
+}
+
+.input::placeholder {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.label {
+  display: block;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.subscribe-icon-wrapper {
+  display: inline-block;
+}
+
+.send-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-icon-wrapper .icon:hover,
+.subscribe-icon-wrapper .icon:focus {
+  fill: var(--cloud);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* MODAL STYLES */
@@ -483,7 +541,8 @@ header {
   background-color: var(--iris);
   overflow: hidden; /* Hide overflowing content */
   opacity: 0;
-  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: inherit;
   font-size: 16px;
   line-height: 150%;
@@ -566,7 +625,7 @@ header {
   background-color: var(--ocean);
 }
 
-.footer-social-media p {
+.footer-paragraph {
   margin-bottom: 16px;
   color: var(--white);
   font-weight: 500;
