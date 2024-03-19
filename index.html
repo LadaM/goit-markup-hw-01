@@ -367,14 +367,14 @@
           </ul>
         </div>
         <form>
-          <label class="label footer-paragraph" for="email">Subscribe</label>
+          <label class="footer-paragraph" for="email">Subscribe</label>
           <div class="subscribe-form">
             <input class="input" type="email" name="email" placeholder="E-mail" />
             <button class="primary-button subscribe-button" type="submit">
               Subscribe
-                <svg class="send-icon">
-                  <use xlink:href="./images/icons.svg#send-icon"></use>
-                </svg>
+              <svg class="send-icon" viewBox="0 0 24 24">
+                <use xlink:href="./images/icons.svg#send-icon"></use>
+              </svg>
             </button>
           </div>
         </form>
@@ -383,10 +383,51 @@
   </footer>
   <div data-modal class="modal is-hidden">
     <div class="modal-content">
-      <button data-modal-close class="modal-close-btn"><svg class="close-icon">
+      <button data-modal-close class="modal-close-btn">
+        <svg class="close-icon">
           <use href="./images/icons.svg#close-icon"></use>
-        </svg></button>
-      <!-- Modal content -->
+        </svg>
+      </button>
+      <h3 class="form-title">Leave your contacts and we will call you back</h3>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="contact-form-name" class="label caption">Name</label>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon">
+              <use href="./images/icons.svg#person-icon"></use>
+            </svg>
+          </div>
+          <input id="contact-form-name" name="contact_form_name" class="input input-padding" type="text" autocomplete="off"
+            autofocus />
+        </div>
+        <div class="form-group">
+          <label for="contact-form-phone" class="label caption">Phone</label>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon">
+              <use href="./images/icons.svg#phone-icon"></use>
+            </svg>
+          </div>
+          <input id="contact-form-phone" name="contact_form_phone" class="input" type="tel" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label for="contact-form-email" class="label caption">Email</label>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon">
+              <use href="./images/icons.svg#email-icon"></use>
+            </svg>
+          </div>
+          <input id="contact-form-email" name="contact_form_email" class="input" type="email" />
+        </div>
+        <label for="contact-form-comment" class="label caption">Comment</label>
+        <textarea id="contact-form-comment" name="contact_form_comment" class="input input-padding" rows="5"
+          placeholder="Text input"></textarea>
+        <input type="checkbox" /> <span class="caption">I accept the terms and conditions of the <span><a href=""
+              class="link-text">Privacy Policy</a></span></span>
+
+
+        <button type="submit" class="primary-button">Send</button>
+
+      </form>
     </div>
   </div>
 
