@@ -359,13 +359,19 @@ header {
   border-color: var(--iris); /* Border color when input is focused */
 }
 
+.input-icon-wrapper:focus {
+  fill: var(--iris); /* Fill color of icon when input is focused */
+
+}
+
 .input:focus + .input-icon,
-.input:focus-within + .input-icon {
+.input:focus-within + .input-icon-wrapper .input-icon{
   fill: var(--iris); /* Fill color of icon when input is focused */
 }
 
 .subscribe-form .input {
   border: 1px solid var(--white);
+  color: var(--white);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
