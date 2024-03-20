@@ -385,6 +385,11 @@ header {
 }
 
 .contact-form .primary-button {
+  width: 169px;
+  height: 56px;
+}
+
+.contact-form .primary-button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
