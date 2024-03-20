@@ -295,7 +295,6 @@ header {
 
 .form-title {
   font-size: 16px;
-  padding-top: 48px;
   margin-bottom: 16px;
   text-align: center;
   letter-spacing: 0.02em;
@@ -334,44 +333,10 @@ header {
   cursor: pointer;
 }
 
-/* 
-.checked-icon-wrapper {
-  background: none;
-  position: absolute;
-  left: 28px;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  border: 1px solid var(--navy-blue-modal);
-  border-radius: 2px;
-}
-
-.checked-icon {
-  width: 10px;
-  height: 8px;
-  fill: none;
-}
-
-.input[type="checkbox"]:checked + .checked-icon-wrapper,
-.input[type="checkbox"]:checked + .checked-icon-wrapper .checked-icon {
-  background-color: var(--ocean);
-  fill: var(--cloud);
-} */
-
-.input-icon-wrapper {
+.input-icon {
   position: absolute;
   left: 16px;
-  bottom: 9px;
-  width: 18px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-icon {
-  width: 18px;
-  height: 24px;
+  bottom: 14px;
   fill: var(--navy-blue);
 }
 
@@ -399,12 +364,8 @@ header {
   border-color: var(--iris); /* Border color when input is focused */
 }
 
-.input-icon-wrapper:focus {
-  fill: var(--iris); /* Fill color of icon when input is focused */
-}
-
 .input:focus + .input-icon,
-.input:focus-within + .input-icon-wrapper .input-icon {
+.input:focus-within + .input-icon {
   fill: var(--iris); /* Fill color of icon when input is focused */
 }
 
@@ -487,7 +448,7 @@ input {
   width: 408px;
   height: 584px;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px;
   border-radius: 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 1px 1px 0 rgba(0, 0, 0, 0.14);
@@ -509,6 +470,7 @@ input {
 .modal-close-btn {
   position: absolute;
   right: 24px;
+  top: 24px;
   width: 24px;
   height: 24px;
   display: flex;
