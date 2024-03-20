@@ -417,6 +417,7 @@ header {
 .subscribe-form .input {
   border: 1px solid var(--white);
   color: var(--white);
+  width: 264px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -733,7 +734,10 @@ input {
 
 .footer-content {
   display: flex;
-  gap: 120px;
+}
+
+.footer-logo-content {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -790,6 +794,10 @@ input {
   margin-bottom: 16px;
   color: var(--white);
   font-weight: 500;
+}
+
+.footer-social-media {
+  margin-right: auto;
 }
 
 .footer-social-media .social-media-container {
