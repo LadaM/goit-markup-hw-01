@@ -316,21 +316,61 @@ header {
 .input-padding {
   padding: 8px 16px;
 }
+/* Hide the default checkbox */
+.input-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-.input[type="checkbox"] {
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-checkbox {
+  display: inline-block;
   width: 16px;
   height: 16px;
   cursor: pointer;
-  border: 1px solid var(--navy-blue-modal);
-  border-radius: 2px;
 }
 
-.checkbox-label {
-  margin-top: 8px;
-  display: flex;
+/* Style unchecked state */
+.unchecked-icon {
+  position: absolute;
+  top: 5px;
+}
+
+/* Style checked state */
+.checked-icon-wrapper {
+  display: none;
   align-items: center;
-  gap: 4px;
-  cursor: pointer;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background-color: var(--ocean);
+  border: 1px solid var(--ocean);
+}
+
+.checked-icon {
+  fill: var(--cloud);
+  width: 10px;
+  height: 8px;
+}
+
+/* When the checkbox is checked, hide unchecked icon and show checked icon */
+.input-checkbox:checked + .custom-checkbox .unchecked-icon {
+  display: none;
+}
+
+.input-checkbox:checked + .custom-checkbox .checked-icon-wrapper {
+  display: flex;
+}
+
+.input-checkbox:checked + .custom-checkbox .checked-icon-wrapper .checked-icon {
+  display: block;
 }
 
 .input-icon {

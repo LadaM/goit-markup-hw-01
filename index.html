@@ -421,16 +421,23 @@
         <label for="contact-form-comment" class="label caption">Comment</label>
         <textarea id="contact-form-comment" name="contact_form_comment" class="input input-padding" rows="5"
           placeholder="Text input"></textarea>
-        <label class="checkbox-label">
-          <!-- <div class="checked-icon-wrapper"> -->
-          <!-- <svg class="checked-icon"> -->
-          <!-- <use xlink:href="./images/icons.svg#checked-icon"></use> -->
-          <!-- </svg> -->
-          <!-- </div> -->
-          <input type="checkbox" class="input" />
-          <span class="caption">I accept the terms and conditions of the <span><a href="" class="link-text">Privacy
-                Policy</a></span></span>
-        </label>
+        <label class="checkbox-container">
+          <input type="checkbox" class="input-checkbox">
+          <span class="custom-checkbox">
+            <!-- SVG icon for unchecked state -->
+            <svg class="unchecked-icon" width="16px" height="16px">
+              <use xlink:href="./images/icons.svg#checkbox"></use>
+            </svg>
+            <!-- SVG icon for checked state -->
+            <div class="checked-icon-wrapper">
+              <svg class="checked-icon">
+                <use href="./images/icons.svg#checked-icon"></use>
+              </svg>
+            </div>
+          </span>
+          <span class="caption">I accept the terms and conditions of the <qspan><a href="" class="link-text">Privacy
+            Policy</a></qspan></span>
+          </label>
         <button type="submit" class="primary-button">Send</button>
       </form>
     </div>
