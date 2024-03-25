@@ -1,5 +1,5 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
-    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     xmlns="http://www.w3.org/2000/svg">
     <defs>
         <!-- Form icons -->
         <symbol id="email-icon" viewBox="0 0 15 12">
@@ -28,6 +28,12 @@
         </symbol>
         <symbol fill="none" viewBox="0 0 16 16" id="checkbox" xmlns="http://www.w3.org/2000/svg">
             <rect x=".5" y=".5" width="15" height="15" rx="1.5" stroke="#2E2F42" stroke-opacity=".4" />
+        </symbol>
+
+        <!-- Navigation icons -->
+        <symbol id="burger-menu" viewBox="0 0 32 22">
+            <path d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866"
+                  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
 
         <!-- Benefits icons-->
