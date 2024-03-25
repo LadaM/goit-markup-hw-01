@@ -222,15 +222,19 @@ header {
 .address-container a {
   color: var(--slate);
   text-decoration: none;
+  font-style: normal;
   font-family: inherit;
   font-weight: 400;
   font-size: inherit;
   line-height: 150%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-container a:hover,
 .address-container a:focus {
   color: var(--ocean);
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
